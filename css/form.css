@@ -1,0 +1,100 @@
+
+.bare .col-12 h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 30px;
+    text-align:center;
+    margin-top:100px;
+}
+
+.bare h2.h4{
+        font-size: 24px;
+    font-weight: 400;
+    color: var(--text);
+    text-align: center;
+}
+.bare .col-6{
+    width:100%;
+    max-width: 100%;
+    flex: unset;
+}
+.bare form{
+    width:100%;
+    max-width:750px;
+    margin:auto;
+    margin-top:50px;
+}
+
+.bare .form-group .form-control{
+    height:44px;
+    border-radius:22px;
+    font-size:16px;
+    padding:22px;
+    color:var(--text);
+    border:2px solid #e5e5e5;
+    transition:0.3s;
+}
+.bare .form-group .form-control:focus{
+    border-color:#fe792a;
+    outline:none;
+    box-shadow:none;
+}
+.bare .form-group .form-control::placeholder{
+   color:#999;
+}
+
+.bare .form-group textarea.form-control{
+   height:100px;
+   resize:none;
+}
+
+
+.bare .submit-btn {
+    background: var(--main);
+    color: var(--sub);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    width: 175px;
+    height: 50px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+    margin-inline-start:auto;
+}
+
+.bare .submit-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--sub);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+html[dir=ltr] .bare .submit-btn::after {
+    transform-origin: left;
+}
+
+.bare .submit-btn:hover::after {
+    transform: scaleX(1);
+}
+
+.bare .submit-btn:hover {
+    border: 2px solid #ff6e1f;
+    color: #ff6e1f;
+}
