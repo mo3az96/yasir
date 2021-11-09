@@ -1074,7 +1074,7 @@ html[dir=ltr] .takamol-elements .element:nth-of-type(6) {
 }
 
 .download-apps-flex a~a {
-    margin-inline-start: 5px;
+    margin-inline-start: 10px;
 }
 
 @media (max-width: 767px) {
