@@ -21,7 +21,7 @@
 }
 .bare form{
     width:100%;
-    max-width:750px;
+    max-width:500px;
     margin:auto;
     margin-top:50px;
 }
@@ -51,6 +51,7 @@
 
 
 .bare .submit-btn {
+    margin: auto;
     background: var(--main);
     color: var(--sub);
     text-decoration: none;
@@ -97,4 +98,9 @@ html[dir=ltr] .bare .submit-btn::after {
 .bare .submit-btn:hover {
     border: 2px solid #ff6e1f;
     color: #ff6e1f;
+}
+div#recaptcha-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

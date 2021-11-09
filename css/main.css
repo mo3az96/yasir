@@ -1065,35 +1065,25 @@ html[dir=ltr] .takamol-elements .element:nth-of-type(6) {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .download-apps-flex .apps-title {
     font-size: 20px;
-    margin: 0;
-    margin-inline-end: 15px;
+    margin: 0 0 15px;
 }
 
-.download-apps-flex a {
+.download-apps-flex a~a {
     margin-inline-start: 5px;
 }
 
 @media (max-width: 767px) {
     .download-apps-flex {
         padding-top: 70px;
-        flex-direction: column;
     }
 
     .download-apps-flex .apps-title {
         font-size: 18px;
-        margin: 0 0 15px;
-    }
-
-    .download-apps-flex a {
-        margin-inline-start: 0;
-    }
-
-    .download-apps-flex a~a {
-        margin-inline-start: 5px;
     }
 }
 
@@ -2956,15 +2946,18 @@ html[dir=ltr] .icon-li .icon-link::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fe7223;
+    background-color: #313131;
     color: #fff;
     font-size: 24px;
     transition: var(--sub);
     transition: 0.3s;
-    border: 2px solid #fe7223;
+    border: 2px solid #313131;
 }
 
+
+
 .fixed-phone:hover {
-    background-color: #fff;
-    color: #fe7223;
+    border: 2px solid #fe7223;
+    background-color: #fe7223;
+    color: #fff;
 }
