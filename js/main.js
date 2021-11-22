@@ -200,3 +200,15 @@ $(document).ready(function() {
     });
 
 });
+
+$(document).ready(function () {
+    $(".pt").on("click", ".pt_control", function () {
+        var l = $(this);
+        if (l.hasClass("pt_control_all")) {
+            var o = $(".pt_category").has(".pt_control");
+            l.toggleClass("collapsed"),
+                o.toggleClass("collapsed", l.hasClass("collapsed")),
+                $(".showMoreBtn").remove()
+        } else { l.closest(".pt_category").toggleClass("collapsed") }
+    })
+});
