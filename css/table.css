@@ -83,7 +83,7 @@ table.pt .t_cell .plan_warning {
 }
 
 table.pt .featured_plan {
-    border-color: #f1dd32;
+    border-color: #fe7223;
     border-width: 2px;
     position: relative;
     border-bottom-color: #edeeee;
@@ -98,7 +98,7 @@ table.pt th.featured_plan:before {
     font-weight: 900;
     font-family: Font Awesome\ 5 Free;
     position: absolute;
-    color: #f1dd32;
+    color: #fe7223;
     font-size: 20px;
     content: "\F005";
     background-color: #fff;
@@ -116,11 +116,11 @@ html[dir=ltr] table.pt th.featured_plan:before {
 }
 
 table.pt tr:first-child .featured_plan {
-    border-top-color: #f1dd32
+    border-top-color: #fe7223
 }
 
 table.pt tr:last-child td.featured_plan {
-    border-bottom-color: #f1dd32
+    border-bottom-color: #fe7223
 }
 
 table.pt .has-note {
